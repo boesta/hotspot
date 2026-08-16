@@ -948,7 +948,7 @@ function routeInfo() {
 }
 
 function setDocumentTitle(label) {
-  document.title = `${label} — Hotspot interactieve preview`;
+  document.title = `${label} — Hotspot MVP`;
 }
 
 function renderHeader() {
@@ -1000,7 +1000,7 @@ function makerCard(maker) {
   return `
     <article class="maker-card">
       <div class="card-top">
-        <span class="badge">Demoprofiel</span>
+        <span class="badge">Makerprofiel</span>
         ${blocked ? '<span class="status-pill danger">Geblokkeerd</span>' : ""}
       </div>
       ${maker.portrait ? `<img class="maker-card-image" src="${escapeHtml(maker.portrait)}" ${imageSizeAttributes(maker.portrait)} alt="Fictief portret van ${escapeHtml(maker.name)}" loading="lazy" decoding="async" />` : `<div class="maker-card-placeholder">${avatar(maker, "avatar-lg")}</div>`}
@@ -1606,7 +1606,7 @@ function renderCallResults() {
   const summaryNode = document.querySelector("#call-results-summary");
   if (!resultNode || !summaryNode) return;
   const results = filteredCalls();
-  summaryNode.textContent = `${results.length} van ${calls.length} demo-oproepen gevonden`;
+  summaryNode.textContent = `${results.length} van ${calls.length} oproepen gevonden`;
   resultNode.innerHTML = results.length
     ? results.map(callCard).join("")
     : `<div class="empty-state"><h2>Geen oproepen gevonden</h2><p>Pas één of meer filters aan.</p><button class="button button-secondary" type="button" data-action="clear-filters">Wis filters</button></div>`;
@@ -1672,7 +1672,7 @@ function renderMakers() {
             <input id="maker-search" type="search" value="${escapeHtml(state.makerQuery)}" placeholder="Bijvoorbeeld producer, pop of Utrecht" />
           </div>
         </div>
-        <p class="results-summary" aria-live="polite">${filtered.length} van ${makers.length} demoprofielen gevonden</p>
+        <p class="results-summary" aria-live="polite">${filtered.length} van ${makers.length} makersprofielen gevonden</p>
         <div class="maker-grid" id="maker-results">
           ${filtered.length ? filtered.map(makerCard).join("") : '<div class="empty-state"><h2>Geen makers gevonden</h2><p>Probeer een andere zoekterm.</p></div>'}
         </div>
@@ -2295,7 +2295,7 @@ document.addEventListener("input", (event) => {
     );
     const grid = document.querySelector("#maker-results");
     const summary = grid.previousElementSibling;
-    summary.textContent = `${filtered.length} van ${makers.length} demoprofielen gevonden`;
+    summary.textContent = `${filtered.length} van ${makers.length} makersprofielen gevonden`;
     grid.innerHTML = filtered.length ? filtered.map(makerCard).join("") : '<div class="empty-state"><h2>Geen makers gevonden</h2><p>Probeer een andere zoekterm.</p></div>';
   }
 });
