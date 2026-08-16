@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hotspot interactieve preview: laat horen wat er ligt, vind de ontbrekende maker en maak samen meer werk af."
+    />
+    <meta name="theme-color" content="#081b36" />
+    <title>Hotspot — interactieve preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Naar de hoofdinhoud</a>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#/" aria-label="Hotspot startpagina">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span>HOTSPOT</span>
+          <small class="demo-badge">Preview</small>
+        </a>
+
+        <button
+          class="mobile-menu"
+          type="button"
+          data-action="toggle-menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span aria-hidden="true">☰</span>
+          <span>Menu</span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Hoofdnavigatie">
+          <a href="#/community" data-nav="community">Community</a>
+          <a href="#/oproepen" data-nav="oproepen">Werk samen</a>
+          <a href="#/makers" data-nav="makers">Ontdek makers</a>
+        </nav>
+
+        <div class="header-actions" id="header-actions"></div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="shell footer-compact">
+        <a class="brand brand-footer" href="#/" aria-label="Hotspot startpagina">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span>HOTSPOT</span>
+        </a>
+        <p><strong>Interactieve preview.</strong> Alle inhoud is fictief; niets wordt na verversen bewaard.</p>
+        <nav aria-label="Voetnavigatie">
+          <a href="#/community">Open de community</a>
+          <a href="#/oproepen">Bekijk oproepen</a>
+          <a href="#/makers">Ontdek makers</a>
+        </nav>
+      </div>
+    </footer>
+
+    <dialog id="app-dialog" aria-labelledby="dialog-title">
+      <div id="dialog-content"></div>
+    </dialog>
+
+    <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="logic.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
