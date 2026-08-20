@@ -1,0 +1,30 @@
+Hotspot demo image assets
+Generated with the built-in image generation tool on 2026-07-17.
+All depicted people are fictional. Images contain no intentional text, logos or watermarks.
+
+hotspot-hero-editorial.webp
+- 1200 x 568 px
+- Wide editorial home-studio portrait; maker on the right and negative space on the left.
+- Intended use: homepage hero or "Maker in de Hotspot" feature.
+
+maker-songwriter-composer.webp
+- 800 x 1000 px
+- Fictional songwriter/composer working with notebook, guitar and keyboard.
+
+maker-producer-beatmaker.webp
+- 800 x 1200 px
+- Fictional producer/beatmaker working with pads and synthesizer.
+
+maker-vocalist-instrumentalist.webp
+- 800 x 1202 px
+- Fictional vocalist/instrumentalist rehearsing with microphone and bass.
+
+maker-mix-mastering.webp
+- 800 x 1200 px
+- Fictional mix/mastering engineer collaborating in a modest project studio.
+
+Shared visual direction
+- Natural Dutch music-making environments; editorial magazine photography.
+- Warm neutrals and wood, muted navy and restrained coral accents.
+- Approachable, inclusive, professional and collaboration-first.
+- No festival, classroom, celebrity, luxury-studio or commercial-service imagery.
