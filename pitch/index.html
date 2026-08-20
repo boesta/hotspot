@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bekijk de Hotspot-pitchfilm en ontdek daarna de interactieve website voor muziekmakers."
+    />
+    <meta name="theme-color" content="#071a33" />
+    <meta property="og:title" content="Hotspot — samen meer muziek afmaken" />
+    <meta
+      property="og:description"
+      content="Bekijk de korte pitchfilm en open daarna de interactieve Hotspot-website."
+    />
+    <meta property="og:type" content="website" />
+    <title>Hotspot — Pitchfilm</title>
+    <link rel="stylesheet" href="pitch.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#pitchfilm">Ga naar de pitchfilm</a>
+
+    <main class="pitch-page">
+      <header class="pitch-header">
+        <a class="brand" href="../#/" aria-label="Open de interactieve Hotspot-website">
+          <span>HOTSPOT</span>
+          <span class="brand-wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </span>
+        </a>
+        <p>Pitchfilm voor BumaStemra</p>
+      </header>
+
+      <section class="intro" aria-labelledby="pitch-title">
+        <p class="eyebrow">Meer samenwerking. Meer nummers af.</p>
+        <h1 id="pitch-title">Bekijk waarom Hotspot makers helpt om samen verder te komen.</h1>
+        <p class="intro-copy">
+          In 77 seconden zie je het probleem, de Hotspot Challenge en hoe de website makers bij elkaar brengt.
+        </p>
+      </section>
+
+      <div class="pitch-layout">
+        <section class="film-card" aria-labelledby="film-title">
+          <div class="film-heading">
+            <span>01</span>
+            <div>
+              <p>De pitch</p>
+              <h2 id="film-title">Van een ontbrekende maker naar een afgerond nummer</h2>
+            </div>
+          </div>
+
+          <div class="video-frame">
+            <video
+              id="pitchfilm"
+              controls
+              playsinline
+              preload="metadata"
+              poster="poster.jpg"
+              aria-label="Hotspot-pitchfilm voor BumaStemra"
+            >
+              <source src="Hotspot_pitchfilm_BumaStemra.mp4" type="video/mp4" />
+              Je browser kan deze video niet afspelen.
+            </video>
+          </div>
+        </section>
+
+        <aside class="next-step" id="next-step" aria-labelledby="next-title">
+          <span class="step-number">02</span>
+          <p class="next-label">Bekijk het zelf</p>
+          <h2 id="next-title">Open daarna de interactieve Hotspot.</h2>
+          <p>
+            Bekijk hoe makers hun werk laten horen, een ontbrekende bijdrage concreet maken en zelf een passende maker vinden.
+          </p>
+          <a class="primary-action" id="site-link" href="../#/">
+            Open de interactieve website
+            <span aria-hidden="true">↗</span>
+          </a>
+          <p class="after-film" id="after-film" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+
+      <footer>
+        <span>HOTSPOT</span>
+        <p>Samen muziek maken én afmaken.</p>
+      </footer>
+    </main>
+
+    <script src="pitch.js" defer></script>
+  </body>
+</html>
